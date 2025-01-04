@@ -127,8 +127,6 @@ if (!templates || !templates.length) {
     }]
   }]));
 
-  templates = JSON.parse(localStorage.getItem("templates"));
-
 }
 
 const listBox = document.getElementById("ListBox");
