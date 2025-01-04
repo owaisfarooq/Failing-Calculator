@@ -142,7 +142,7 @@ templates.forEach((template, index) => {
         <div class="card-body">
           <h5 class="card-title">${template.name}</h5>
           <p class="card-text">Good Luck 🫡</p>
-          <a href="/calculator?name=${encodeURIComponent(template.name)}" class="btn btn-primary">Go There</a>
+          <a href="/calculator.html?name=${encodeURIComponent(template.name)}" class="btn btn-primary">Go There</a>
         </div>
       </div>
     </div>
