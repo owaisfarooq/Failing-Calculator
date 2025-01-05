@@ -8,7 +8,8 @@ function route (name) {
 
 let templates = JSON.parse(localStorage.getItem("templates"));
 
-if (!templates || !templates.length) {
+if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || new Date(2025, 0, 5, 17, 0, 0) < new Date(localStorage.getItem("lastUpdated"))) {
+  localStorage.setItem("lastUpdated", new Date(2025, 0, 5, 17, 0, 0).toISOString());
   localStorage.setItem("templates", JSON.stringify([{
     "name": "Calculus",
     "Entries": [{
