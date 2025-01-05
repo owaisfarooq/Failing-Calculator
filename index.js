@@ -1,3 +1,11 @@
+function route (name) {
+  if (window.location.href.includes("github")) {
+    window.location.assign(`/Failing-Calculator/calculator.html?name=${encodeURIComponent(name)}`);
+  } else {
+    window.location.assign(`calculator.html?name=${encodeURIComponent(name)}`);
+  }
+}
+
 let templates = localStorage.getItem("templates");
 
 templates = JSON.parse(localStorage.getItem("templates"));
@@ -137,12 +145,12 @@ templates.forEach((template, index) => {
     htmlToBeAdded += `</div><div class="row my-5">`;
   }
   htmlToBeAdded += `
-    <div class="col-4">
-      <div class="card" style="width: 18rem;">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="card mx-auto" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">${template.name}</h5>
           <p class="card-text">Good Luck 🫡</p>
-          <a href="/calculator.html?name=${encodeURIComponent(template.name)}" class="btn btn-primary">Go There</a>
+          <a onclick='route("${template.name}")' class="btn btn-primary">Go There</a>
         </div>
       </div>
     </div>

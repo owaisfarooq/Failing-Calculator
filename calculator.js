@@ -57,21 +57,21 @@ function makeOverAllTable () {
     const minMarksNeededInFinals = (40 - totalpercentagesCouting) / (finalWeightage / 100);
     console.log("minMarksNeededInFinals: ", minMarksNeededInFinals);
     const result = document.getElementById("result");
-    result.innerHTML = `Percentage Needed in Finals: ${Number(minMarksNeededInFinals).toFixed(6)} %`;
+    result.innerHTML = `Percentage Needed in Finals: <mark>${Number(minMarksNeededInFinals).toFixed(6)} %</mark>`;
 
     overAllTable.innerHTML = htmlToAdd;
 
 }
 
-let htmlToBeAdded = `<div class="row">`;
+let htmlToBeAdded = `<div class="row g-4">`;
 
 template.Entries.forEach((entry, index) => {
     if (index % 2 === 0 && index !== 0) {
-        htmlToBeAdded += `</div><div class="row my-5">`;
+        htmlToBeAdded += `</div><div class="row g-4">`;
     }
 
     htmlToBeAdded += `
-    <div class="col-6">
+    <div class="col-md-6 table-responsive">
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
