@@ -6,9 +6,7 @@ function route (name) {
   }
 }
 
-let templates = localStorage.getItem("templates");
-
-templates = JSON.parse(localStorage.getItem("templates"));
+let templates = JSON.parse(localStorage.getItem("templates"));
 
 if (!templates || !templates.length) {
   localStorage.setItem("templates", JSON.stringify([{
@@ -23,6 +21,10 @@ if (!templates || !templates.length) {
       }, {
         "name": "Assignment-II",
         "obtainedMarks": 12,
+        "totalMarks": 15
+      }, {
+        "name": "Assignment-II",
+        "obtainedMarks": 10,
         "totalMarks": 15
       }]
     }, {
@@ -49,7 +51,19 @@ if (!templates || !templates.length) {
         "obtainedMarks": 10,
         "totalMarks": 10
       }, {
-        "name": "Quiz-I",
+        "name": "Quiz-II",
+        "obtainedMarks": 7,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-III",
+        "obtainedMarks": 9,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-IV",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-V",
         "obtainedMarks": 7,
         "totalMarks": 10
       }]
@@ -135,6 +149,7 @@ if (!templates || !templates.length) {
     }]
   }]));
 
+  templates = JSON.parse(localStorage.getItem("templates"));
 }
 
 const listBox = document.getElementById("ListBox");
