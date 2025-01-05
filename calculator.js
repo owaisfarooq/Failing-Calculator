@@ -43,12 +43,12 @@ function makeOverAllTable () {
 
     template.Entries.forEach((entry, index) => {
         htmlToAdd += `
-            <td>${percentagesCouting[index]}</td>
+            <td>${percentagesCouting[index].toFixed(2)}</td>
         `;
     });
 
     htmlToAdd += `
-                    <td>${40 - totalpercentagesCouting}</td>
+                    <td>${Number(40 - totalpercentagesCouting).toFixed(2)}</td>
                 </tr>
             </tbody>
         </table>
