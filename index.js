@@ -7,9 +7,9 @@ function route (name) {
 }
 
 let templates = JSON.parse(localStorage.getItem("templates"));
-
-if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || new Date(2025, 0, 5, 17, 0, 0) < new Date(localStorage.getItem("lastUpdated"))) {
-  localStorage.setItem("lastUpdated", new Date(2025, 0, 5, 17, 0, 0).toISOString());
+const newDate = new Date(2025, 0, 9, 0, 44, 0)
+if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || newDate < new Date(localStorage.getItem("lastUpdated"))) {
+  localStorage.setItem("lastUpdated", newDate.toISOString());
   localStorage.setItem("templates", JSON.stringify([{
     "name": "Calculus",
     "Entries": [{
@@ -146,6 +146,61 @@ if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || n
         "name": "Project-I",
         "obtainedMarks": 3,
         "totalMarks": 10
+      }]
+    }]
+  }, {
+    "name": "Computer Networks",
+    "Entries": [{
+      "name": "Assignments",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Assignment-I",
+        "obtainedMarks": 7,
+        "totalMarks": 10
+      }, {
+        "name": "Assignment-II",
+        "obtainedMarks": 7,
+        "totalMarks": 10
+      }, {
+        "name": "Assignment-III",
+        "obtainedMarks": 5,
+        "totalMarks": 10
+      }]
+    }, {
+      "name": "Mids",
+      "weightage": 25,
+      "Entries": [{
+        "name": "Midterm Q.1",
+        "obtainedMarks": 7,
+        "totalMarks": 10
+      }, {
+        "name": "Midterm Q.2",
+        "obtainedMarks": 11,
+        "totalMarks": 20
+      }, {
+        "name": "Midterm Q.3",
+        "obtainedMarks": 11,
+        "totalMarks": 20
+      }]
+    }, {
+      "name": "Quizes",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Quiz-I",
+        "obtainedMarks": 8,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-II",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }]
+    }, {
+      "name": "Projects",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Project-I",
+        "obtainedMarks": 12.5,
+        "totalMarks": 20
       }]
     }]
   }]));
