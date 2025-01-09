@@ -89,7 +89,7 @@ template.Entries.forEach((entry, index) => {
                 <th scope="row">${subIndex + 1}</th>
                 <td>${subEntry.name}</td>
                 <td><input class="form-control" value="${subEntry.obtainedMarks}" oninput="calculate()" type="number"></td>
-                <td><input class="form-control" value="${subEntry.totalMarks}" oninput="calculate()" type="number"></td>
+                <td><input class="form-control" disabled="true" value="${subEntry.totalMarks}" oninput="calculate()" type="number"></td>
                 <td>${((subEntry.obtainedMarks / subEntry.totalMarks) * 100).toFixed(2)} %</td>
             </tr>`;
     });
