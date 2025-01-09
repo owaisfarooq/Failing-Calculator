@@ -7,10 +7,81 @@ function route (name) {
 }
 
 let templates = JSON.parse(localStorage.getItem("templates"));
-const newDate = new Date(2025, 0, 9, 0, 44, 0)
+const newDate = new Date(2025, 0, 9, 10, 24, 0)
 if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || newDate < new Date(localStorage.getItem("lastUpdated"))) {
   localStorage.setItem("lastUpdated", newDate.toISOString());
   localStorage.setItem("templates", JSON.stringify([{
+    "name": "Intro to Data Science",
+    "Entries": [{
+      "name": "Assignments",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Assignment-I",
+        "obtainedMarks": 5,
+        "totalMarks": 10
+      }, {
+        "name": "Assignment-II",
+        "obtainedMarks": 5,
+        "totalMarks": 10
+      }, {
+        "name": "Assignment-III",
+        "obtainedMarks": 7,
+        "totalMarks": 10
+      }]
+    }, {
+      "name": "Mids",
+      "weightage": 30,
+      "Entries": [{
+        "name": "Midterm Q.1",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }, {
+        "name": "Midterm Q.2",
+        "obtainedMarks": 10,
+        "totalMarks": 106
+      }, {
+        "name": "Midterm Q.3",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }, {
+        "name": "Midterm Q.3",
+        "obtainedMarks": 4,
+        "totalMarks": 10
+      }, {
+        "name": "Midterm Q.3",
+        "obtainedMarks": 0.01,
+        "totalMarks": 10
+      }]
+    }, {
+      "name": "Project",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Project-I",
+        "obtainedMarks": 9,
+        "totalMarks": 10
+      }]
+    }, {
+      "name": "Quizes",
+      "weightage": 10,
+      "Entries": [{
+        "name": "Quiz-I",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-II",
+        "obtainedMarks": 9,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-III",
+        "obtainedMarks": 9,
+        "totalMarks": 10
+      }, {
+        "name": "Quiz-IV",
+        "obtainedMarks": 6,
+        "totalMarks": 10
+      }]
+    }]
+  }, {
     "name": "Calculus",
     "Entries": [{
       "name": "Assignments",
@@ -24,7 +95,7 @@ if (!templates || !templates.length || !localStorage.getItem("lastUpdated") || n
         "obtainedMarks": 12,
         "totalMarks": 15
       }, {
-        "name": "Assignment-II",
+        "name": "Assignment-III",
         "obtainedMarks": 10,
         "totalMarks": 15
       }]
