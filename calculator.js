@@ -157,3 +157,39 @@ function calculate() {
 
 // Initial calculation
 calculate();
+
+function calculateGuess () {
+    calculate();
+    const guessElement = document.getElementById("guess")
+    const guess = Number(guessElement.value);
+    // if (guess > 100 || guess < 0) {
+    //     guessElement.classList.add("is-invalid");
+    //     // Add a tooltip with a helpful message
+    //     guessElement.setAttribute("title", "Input must be greater than 0 and less than 100");
+    //     return;
+    // } else {
+    //     guessElement.classList.remove("is-invalid");
+    //     guessElement.removeAttribute("title"); // Remove tooltip when input is valid
+    // }
+    console.log("guess: ", guess);
+    let overAllMarks = 0;
+    let finalWeightage = 100;
+    // entity = Assignments
+    template.Entries.forEach(entity => {
+        let entityTotalMarks = 0;
+        let entityObtainedMarks = 0;
+        entity.Entries.forEach(entry => {
+            entityTotalMarks += entry.totalMarks;
+            entityObtainedMarks += entry.obtainedMarks;
+        });
+        const entityOverAllMarks = (entityObtainedMarks/entityTotalMarks)*entity.weightage;
+        finalWeightage -= entity.weightage;
+        console.log("entity", entity);
+        console.log("entityOverAllMarks", entityOverAllMarks)
+        overAllMarks += entityOverAllMarks;
+        console.log("overAllMarks: ", overAllMarks)
+    });
+    overAllMarks += (guess*finalWeightage/100);
+    const guessResult = document.getElementById("guessResult");
+    guessResult.value = overAllMarks;
+}

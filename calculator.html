@@ -13,9 +13,22 @@
     <h1 id="result" class="text-center my-2" style="font-weight: bolder; font-family: Poppins;">Calculating</h1>
     <div class="container-fluid" id="MainBox">
     </div>
-    <div>
+    <div class="container-fluid">
         <table class="table table-striped table-hover" id="overAllTable">
         </table>
+    </div>
+
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <h2>Check your overall marks by guessing your final marks</h2>
+            <br>
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <input id="guess" class="form-control" oninput="calculateGuess()" placeholder="guess your finals marks here" type="number">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <input id="guessResult" class="form-control" disabled="1" placeholder="0" type="number">
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="calculator.js"></script>
