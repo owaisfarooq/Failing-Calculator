@@ -12,10 +12,12 @@ function route (name) {
   }
 }
 
-function dataUpdated(version) {
+function dataUpdated(versionFileData) {
   localStorage.setItem(lastUpdateKey, new Date().toISOString());
-  localStorage.setItem(versionKey, version);
-  alert('Version updated! using data version: ' + version);
+  localStorage.setItem(versionKey, versionFileData.version);
+
+  alert('Version updated! using data version: ' + versionFileData.version);
+  alert('Update message: ' + versionFileData.updateMessage);
 }
 
 function checkForUpdates(latestVersion) {
@@ -36,12 +38,12 @@ function checkForUpdates(latestVersion) {
 async function getLatestVersion() {
   const response = await fetch(`${versionFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
   const data = await response.json();
-  return data.version;
+  return data;
 }
 
 async function getTemplates() {
-  const latestVersion = await getLatestVersion();
-  const needsUpdate = checkForUpdates(latestVersion);
+  const latestVersionData = await getLatestVersion();
+  const needsUpdate = checkForUpdates(latestVersionData.version);
 
   if (needsUpdate) {
     try {
@@ -49,7 +51,7 @@ async function getTemplates() {
       const data = await response.json();
 
       localStorage.setItem(templatesKey, JSON.stringify(data));
-      dataUpdated(latestVersion);
+      dataUpdated(latestVersionData);
 
       return data;
     } catch (error) {

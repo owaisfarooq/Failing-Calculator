@@ -1,287 +1,881 @@
 [
     {
-    "name": "Data Structures",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Assignment-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-III", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 30,
-        "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 30 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 20 }
-        ]
-        },
-        {
-        "name": "Project",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Project-I", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        }
-    ]
-    },
-    {
-    "name": "Intro to Data Science",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Assignment-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-III", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 30,
-        "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Project",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Project-I", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-III", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-IV", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        }
-    ]
-    },
-    {
-    "name": "Calculus",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 15,
-        "Entries": [
-            { "name": "Assignment-I", "obtainedMarks": 0, "totalMarks": 15 },
-            { "name": "Assignment-II", "obtainedMarks": 0, "totalMarks": 15 },
-            { "name": "Assignment-III", "obtainedMarks": 0, "totalMarks": 15 }
-        ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 25,
-        "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 30 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 15,
-        "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-III", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-IV", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-V", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        }
-    ]
-    },
-    {
-    "name": "Probality and Statistics",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 10,
+        "name": "Data Structures",
         "Entries": [
             {
-            "name": "Assignment-1",
-            "obtainedMarks": 0,
-            "totalMarks": 5
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             },
             {
-            "name": "Assignment-2",
-            "obtainedMarks": 0,
-            "totalMarks": 10
+                "name": "Mids",
+                "weightage": 30,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 30
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
             },
             {
-            "name": "Assignment-3",
-            "obtainedMarks": 0,
-            "totalMarks": 5
+                "name": "Project",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             },
             {
-            "name": "Assignment-4",
-            "obtainedMarks": 0,
-            "totalMarks": 5
-            },
-            {
-            "name": "Assignment-5",
-            "obtainedMarks": 0,
-            "totalMarks": 10
-            },
-            {
-            "name": "Assignment-6",
-            "obtainedMarks": 0,
-            "totalMarks": 10
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             }
         ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 25,
-        "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 15 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.4", "obtainedMarks": 0, "totalMarks": 15 }
-        ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 5 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 20 },
-            { "name": "Quiz-III", "obtainedMarks": 0, "totalMarks": 20 },
-            { "name": "Quiz-IV", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Projects",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Project-I", "obtainedMarks": 0, "totalMarks": 50 }
-        ]
-        }
-    ]
     },
     {
-    "name": "Multi-Variable Calculus",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 10,
+        "name": "Intro to Data Science",
         "Entries": [
             {
-            "name": "Assignment-I",
-            "obtainedMarks": 0,
-            "totalMarks": 20
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             },
             {
-            "name": "Assignment-II",
-            "obtainedMarks": 0,
-            "totalMarks": 20
+                "name": "Mids",
+                "weightage": 30,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             },
             {
-            "name": "Assignment-III",
-            "obtainedMarks": 0,
-            "totalMarks": 20
+                "name": "Project",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             },
             {
-            "name": "Assignment-IV",
-            "obtainedMarks": 0,
-            "totalMarks": 20
-            },
-            {
-            "name": "Assignment-V",
-            "obtainedMarks": 0,
-            "totalMarks": 20
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
             }
         ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 25,
-        "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 12 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 12 },
-            { "name": "Midterm Q.4", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.5", "obtainedMarks": 0, "totalMarks": 6 }
-        ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-III", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-IV", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-V", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-VI", "obtainedMarks": 0, "totalMarks": 10 }
-        ]
-        },
-        {
-        "name": "Projects",
-        "weightage": 10,
-        "Entries": [
-            { "name": "Project", "obtainedMarks": 0, "totalMarks": 70 }
-        ]
-        }
-    ]
     },
     {
-    "name": "Computer Networks",
-    "Entries": [
-        {
-        "name": "Assignments",
-        "weightage": 10,
+        "name": "Calculus",
         "Entries": [
-            { "name": "Assignment-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-II", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Assignment-III", "obtainedMarks": 0, "totalMarks": 10 }
+            {
+                "name": "Assignments",
+                "weightage": 15,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 30
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 15,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-V",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
         ]
-        },
-        {
-        "name": "Mids",
-        "weightage": 25,
+    },
+    {
+        "name": "Probality and Statistics",
         "Entries": [
-            { "name": "Midterm Q.1", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Midterm Q.2", "obtainedMarks": 0, "totalMarks": 20 },
-            { "name": "Midterm Q.3", "obtainedMarks": 0, "totalMarks": 20 }
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-1",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Assignment-2",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-3",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Assignment-4",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Assignment-5",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-6",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.4",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 50
+                    }
+                ]
+            }
         ]
-        },
-        {
-        "name": "Quizes",
-        "weightage": 10,
+    },
+    {
+        "name": "Computer Networks",
         "Entries": [
-            { "name": "Quiz-I", "obtainedMarks": 0, "totalMarks": 10 },
-            { "name": "Quiz-II", "obtainedMarks": 0, "totalMarks": 10 }
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            }
         ]
-        },
-        {
-        "name": "Projects",
-        "weightage": 10,
+    },
+    {
+        "name": "Multi-Variable Calculus",
         "Entries": [
-            { "name": "Project-I", "obtainedMarks": 0, "totalMarks": 20 }
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Assignment-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Assignment-V",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 12
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 12
+                    },
+                    {
+                        "name": "Midterm Q.4",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.5",
+                        "obtainedMarks": null,
+                        "totalMarks": 6
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-V",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-VI",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project",
+                        "obtainedMarks": null,
+                        "totalMarks": 70
+                    }
+                ]
+            }
         ]
-        }
-    ]
+    },
+    {
+        "name": "Linear Algebra",
+        "Entries": [
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Intro to Artificial Intelligence",
+        "Entries": [
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 16
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 18
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 16
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project",
+                        "obtainedMarks": null,
+                        "totalMarks": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Knowledge Representation and Reasoning",
+        "Entries": [
+            {
+                "name": "Assignments, Quizes and CPs",
+                "weightage": 30,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 65
+                    },
+                    {
+                        "name": "CP1",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Computer Organization and Architecture",
+        "Entries": [
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 56
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 25
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 8
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 17
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.4",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    }
+                ]
+            },
+            {
+                "name": "Projects",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Project",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Applied Statistics",
+        "Entries": [
+            {
+                "name": "Assignments, Projects, Quizes and CPs",
+                "weightage": 30,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "CP1",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 8
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 17
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.4",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
+        ]
     }
 ]
