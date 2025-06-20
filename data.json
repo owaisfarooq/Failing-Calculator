@@ -704,23 +704,35 @@
         "name": "Knowledge Representation and Reasoning",
         "Entries": [
             {
-                "name": "Assignments, Quizes and CPs",
-                "weightage": 30,
+                "name": "Assignments",
+                "weightage": 10,
                 "Entries": [
                     {
                         "name": "Assignment-I",
                         "obtainedMarks": null,
                         "totalMarks": 10
-                    },
-                    {
-                        "name": "Quiz-I",
-                        "obtainedMarks": null,
-                        "totalMarks": 65
-                    },
+                    }
+                ]
+            },
+            {
+                "name": "Class Participation",
+                "weightage": 5,
+                "Entries": [
                     {
                         "name": "CP1",
                         "obtainedMarks": null,
                         "totalMarks": 5
+                    }
+                ]
+            },
+            {
+                "name": "Quizzes",
+                "weightage": 15,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 65
                     }
                 ]
             },
@@ -826,15 +838,10 @@
         "Entries": [
             {
                 "name": "Assignments, Projects, Quizes and CPs",
-                "weightage": 30,
+                "weightage": 25,
                 "Entries": [
                     {
                         "name": "Assignment-I",
-                        "obtainedMarks": null,
-                        "totalMarks": 5
-                    },
-                    {
-                        "name": "CP1",
                         "obtainedMarks": null,
                         "totalMarks": 5
                     },
@@ -851,28 +858,34 @@
                 ]
             },
             {
+                "name": "Class Participation",
+                "weightage": 5,
+                "Entries": [
+                    {
+                        "name": "CP1",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    }
+                ]
+            },
+            {
                 "name": "Mids",
                 "weightage": 25,
                 "Entries": [
                     {
                         "name": "Midterm Q.1",
                         "obtainedMarks": null,
-                        "totalMarks": 8
+                        "totalMarks": 20
                     },
                     {
                         "name": "Midterm Q.2",
                         "obtainedMarks": null,
-                        "totalMarks": 17
+                        "totalMarks": 15
                     },
                     {
                         "name": "Midterm Q.3",
                         "obtainedMarks": null,
                         "totalMarks": 15
-                    },
-                    {
-                        "name": "Midterm Q.4",
-                        "obtainedMarks": null,
-                        "totalMarks": 10
                     }
                 ]
             }

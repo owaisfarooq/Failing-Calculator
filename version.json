@@ -1,4 +1,5 @@
 {
-    "version": 3,
-    "updateMessage": "Multi, Linear, COAL, Intro To AI Added. Applied Statistics and KRR might not be correct as the course outline is not provided. Labs will be added in the next update."
+    "version": 4,
+    "updateMessage": "KRR weightage fixed. and Applied Statistics weightage improved.",
+    "updatedTemplates": ["Knowledge Representation and Reasoning", "Applied Statistics"]
 }

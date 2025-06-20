@@ -47,13 +47,25 @@ async function getTemplates() {
 
   if (needsUpdate) {
     try {
-    const response = await fetch(`${templatesFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
-      const data = await response.json();
+      const response = await fetch(`${templatesFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
+      const newTemplates = await response.json();
+      let oldTemplates = JSON.parse(localStorage.getItem(templatesKey));
+      const templatesToUpdate = latestVersionData["updatedTemplates"];
 
-      localStorage.setItem(templatesKey, JSON.stringify(data));
+      // only update the updated templates
+      const updatedTemplates = oldTemplates.map(template => {
+        const isUpdateRequired = templatesToUpdate.find(templateName =>  templateName === template["name"] ) ? true : false;
+        if (isUpdateRequired) {
+          const newTemplate = newTemplates.find(newTemp => newTemp["name"] === template["name"])
+          return newTemplate;
+        }
+        return template;
+      });
+
+      localStorage.setItem(templatesKey, JSON.stringify(updatedTemplates));
       dataUpdated(latestVersionData);
 
-      return data;
+      return newTemplates;
     } catch (error) {
       alert('Error loading templates: ' + JSON.stringify(error));
     }
