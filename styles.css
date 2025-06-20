@@ -13,3 +13,26 @@ input[type=number] {
 h1, h2 {
   font-family: 'Poppins';font-size: 22px;
 }
+
+.tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-bottom: 0px;
+}
+
+.tip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #6767675c;
+  color: #414141;
+  text-align: center;
+  border-radius: 12px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tip:hover .tooltiptext {
+  visibility: visible;
+}

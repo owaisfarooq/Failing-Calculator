@@ -122,6 +122,33 @@ async function getTemplates() {
   return oldTemplates || [];
 }
 
+function getRequiredMarksInFinals (template) {
+  const totalWeightage = template['Entries'].reduce((acc, entry) => acc + entry.weightage, 0);
+  const finalWeightage = 100 - totalWeightage; // will always be 45
+  if (!finalWeightage) {
+    throw new Error("The weightage for finals MUST be 45%");
+  }
+  let totalObtainedMarks = 0;
+
+  template['Entries'].forEach(entry => {
+    let entryOptionedMarks = 0;
+    let entryTotalMarks = 0;
+    const entryWeightage = entry.weightage; // e.g. 10
+
+    entry.Entries.forEach(subEntry => {
+      entryTotalMarks +=subEntry.totalMarks;
+      entryOptionedMarks += subEntry.obtainedMarks;
+    });
+
+    totalObtainedMarks += entryOptionedMarks / entryTotalMarks * entryWeightage;
+  });
+
+  return {
+    totalObtainedMarks: totalObtainedMarks.toFixed(2),
+    percentageNeededInFinals: ((40 - totalObtainedMarks) / (finalWeightage / 100)).toFixed(2),
+  }
+}
+
 function renderTemplates(templates = []) {
   const listBox = document.getElementById("ListBox");
   let htmlToBeAdded = `<div class="row my-5">`;
@@ -130,13 +157,15 @@ function renderTemplates(templates = []) {
     if (index % 3 === 0 && index !== 0) {
       htmlToBeAdded += `</div><div class="row my-5">`;
     }
+    const calculationResults = getRequiredMarksInFinals(template);
     htmlToBeAdded += `
       <div class="col-12 col-md-4 mb-4">
         <div class="card mx-auto" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">${template.name}</h5>
-            <p class="card-text">Good Luck 🫡</p>
-            <a onclick='route("${template.name}")' class="btn btn-primary">Go There</a>
+            <p class="card-text tip my-1">Achived Aggrigate marks: ${calculationResults.totalObtainedMarks}%<span class="tooltiptext">you have currently achieved ${ calculationResults.totalObtainedMarks }% aggrigate marks overall</span></p>
+            <p class="card-text tip my-1">Required marks: ${calculationResults.percentageNeededInFinals}%<span class="tooltiptext">you need ${ calculationResults.percentageNeededInFinals }% marks in finals to pass. min 40% is required to pass</span></p>
+            <a onclick='route("${template.name}")' class="btn btn-primary mt-3">Go There</a>
           </div>
         </div>
       </div>
@@ -150,6 +179,7 @@ function renderTemplates(templates = []) {
 
 function init() {
   getTemplates().then(templates => {
+    console.log("Templates loaded:", templates);
     renderTemplates(templates);
   });
 }
