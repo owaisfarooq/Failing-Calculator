@@ -621,7 +621,7 @@
         "Entries": [
             {
                 "name": "Assignments",
-                "weightage": 10,
+                "weightage": 15,
                 "Entries": [
                     {
                         "name": "Assignment-I",
@@ -658,7 +658,7 @@
             },
             {
                 "name": "Quizes",
-                "weightage": 10,
+                "weightage": 15,
                 "Entries": [
                     {
                         "name": "Quiz-I",
@@ -684,17 +684,6 @@
                         "name": "Quiz-IV",
                         "obtainedMarks": null,
                         "totalMarks": 10
-                    }
-                ]
-            },
-            {
-                "name": "Projects",
-                "weightage": 10,
-                "Entries": [
-                    {
-                        "name": "Project",
-                        "obtainedMarks": null,
-                        "totalMarks": 100
                     }
                 ]
             }

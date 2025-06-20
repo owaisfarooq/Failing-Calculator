@@ -2,7 +2,6 @@ const templates = JSON.parse(localStorage.getItem("templates"));
 const urlParams = new URLSearchParams(window.location.search);
 const templateName = urlParams.get("name");
 const template = templates.find((template) => template.name === templateName);
-
 const MainBox = document.getElementById("MainBox");
 
 function makeOverAllTable () {
@@ -55,7 +54,6 @@ function makeOverAllTable () {
     `;
 
     const minMarksNeededInFinals = (40 - totalpercentagesCouting) / (finalWeightage / 100);
-    console.log("minMarksNeededInFinals: ", minMarksNeededInFinals);
     const result = document.getElementById("result");
     result.innerHTML = `Percentage Needed in Finals: <mark>${Number(minMarksNeededInFinals).toFixed(6)} %</mark>`;
 
@@ -111,7 +109,6 @@ htmlToBeAdded += `</div>`;
 MainBox.innerHTML = htmlToBeAdded;
 
 function calculate() {
-    const data = {};
     // Iterate over each table to calculate totals
     let tIndex = 0;
     const tables = MainBox.querySelectorAll(".table");
@@ -120,6 +117,7 @@ function calculate() {
         const tFoot = table.tFoot;
         let obtainedTotal = 0;
         let totalMarksTotal = 0;
+
         // Calculate row-wise totals
         for (let i = 0; i < tBody.rows.length; i++) {
             const row = tBody.rows[i];
@@ -162,19 +160,9 @@ function calculateGuess () {
     calculate();
     const guessElement = document.getElementById("guess")
     const guess = Number(guessElement.value);
-    // if (guess > 100 || guess < 0) {
-    //     guessElement.classList.add("is-invalid");
-    //     // Add a tooltip with a helpful message
-    //     guessElement.setAttribute("title", "Input must be greater than 0 and less than 100");
-    //     return;
-    // } else {
-    //     guessElement.classList.remove("is-invalid");
-    //     guessElement.removeAttribute("title"); // Remove tooltip when input is valid
-    // }
-    console.log("guess: ", guess);
     let overAllMarks = 0;
     let finalWeightage = 100;
-    // entity = Assignments
+
     template.Entries.forEach(entity => {
         let entityTotalMarks = 0;
         let entityObtainedMarks = 0;
@@ -182,14 +170,12 @@ function calculateGuess () {
             entityTotalMarks += entry.totalMarks;
             entityObtainedMarks += entry.obtainedMarks;
         });
-        const entityOverAllMarks = (entityObtainedMarks/entityTotalMarks)*entity.weightage;
+        const entityOverAllMarks = (entityObtainedMarks / entityTotalMarks) * entity.weightage;
         finalWeightage -= entity.weightage;
-        console.log("entity", entity);
-        console.log("entityOverAllMarks", entityOverAllMarks)
         overAllMarks += entityOverAllMarks;
-        console.log("overAllMarks: ", overAllMarks)
     });
-    overAllMarks += (guess*finalWeightage/100);
+
+    overAllMarks += (guess * finalWeightage / 100);
     const guessResult = document.getElementById("guessResult");
     guessResult.value = overAllMarks;
 }

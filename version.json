@@ -1,5 +1,11 @@
-{
-    "version": 4,
-    "updateMessage": "KRR weightage fixed. and Applied Statistics weightage improved.",
-    "updatedTemplates": ["Knowledge Representation and Reasoning", "Applied Statistics"]
-}
+[
+    {
+        "version": 5,
+        "updateMessage": "Intro to AI project weightage removed.",
+        "updatedTemplates": ["Intro to Artificial Intelligence"]
+    }, {
+        "version": 4,
+        "updateMessage": "KRR weightage fixed. and Applied Statistics weightage improved.",
+        "updatedTemplates": ["Knowledge Representation and Reasoning", "Applied Statistics"]
+    }
+]
