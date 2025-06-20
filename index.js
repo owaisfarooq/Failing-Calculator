@@ -165,7 +165,7 @@ function renderTemplates(templates = []) {
             <h5 class="card-title">${template.name}</h5>
             <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you have currently achieved ${ calculationResults.totalObtainedMarks }% aggrigate marks overall">Achived Aggrigate marks: ${calculationResults.totalObtainedMarks}%</p>
             <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you need ${ calculationResults.percentageNeededInFinals }% marks in finals to pass. min 40% aggrigate is required to pass">Required marks: ${calculationResults.percentageNeededInFinals}%</p>
-            <a onclick='route("${template.name}")' class="btn btn-primary mt-3">Go There</a>
+            <a onclick='route("${template.name}")' tabindex="0" class="btn btn-primary mt-3">Go There</a>
           </div>
         </div>
       </div>
