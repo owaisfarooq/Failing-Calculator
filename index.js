@@ -163,8 +163,8 @@ function renderTemplates(templates = []) {
         <div class="card mx-auto" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">${template.name}</h5>
-            <p class="card-text tip my-1">Achived Aggrigate marks: ${calculationResults.totalObtainedMarks}%<span class="tooltiptext">you have currently achieved ${ calculationResults.totalObtainedMarks }% aggrigate marks overall</span></p>
-            <p class="card-text tip my-1">Required marks: ${calculationResults.percentageNeededInFinals}%<span class="tooltiptext">you need ${ calculationResults.percentageNeededInFinals }% marks in finals to pass. min 40% aggrigate is required to pass</span></p>
+            <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you have currently achieved ${ calculationResults.totalObtainedMarks }% aggrigate marks overall">Achived Aggrigate marks: ${calculationResults.totalObtainedMarks}%</p>
+            <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you need ${ calculationResults.percentageNeededInFinals }% marks in finals to pass. min 40% aggrigate is required to pass">Required marks: ${calculationResults.percentageNeededInFinals}%</p>
             <a onclick='route("${template.name}")' class="btn btn-primary mt-3">Go There</a>
           </div>
         </div>
@@ -179,7 +179,6 @@ function renderTemplates(templates = []) {
 
 function init() {
   getTemplates().then(templates => {
-    console.log("Templates loaded:", templates);
     renderTemplates(templates);
   });
 }
