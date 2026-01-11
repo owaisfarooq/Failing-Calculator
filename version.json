@@ -1,5 +1,9 @@
 [
     {
+        "version": 9,
+        "updateMessage": "Expository Writing added.",
+        "updatedTemplates": ["Expository Writing"]
+    }, {
         "version": 8,
         "updateMessage": "TSA Quizzes weightage fixed.",
         "updatedTemplates": ["Time Series Analysis"]

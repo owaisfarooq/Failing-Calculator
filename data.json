@@ -83,6 +83,111 @@
         ]
     },
     {
+        "name": "Expository Writing",
+        "Entries": [
+            {
+                "name": "Assignments",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-V",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 15
+                    }
+                ]
+            },
+            {
+                "name": "Presentation",
+                "weightage": 5,
+                "Entries": [
+                    {
+                        "name": "Presentation-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Project",
+                "weightage": 5,
+                "Entries": [
+                    {
+                        "name": "Project-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 15,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 5
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 20
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Data Structures",
         "Entries": [
             {
