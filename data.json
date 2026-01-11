@@ -56,7 +56,7 @@
             },
             {
                 "name": "Quizes",
-                "weightage": 10,
+                "weightage": 15,
                 "Entries": [
                     {
                         "name": "Quiz-I",

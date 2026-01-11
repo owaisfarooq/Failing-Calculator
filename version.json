@@ -1,5 +1,9 @@
 [
     {
+        "version": 8,
+        "updateMessage": "TSA Quizzes weightage fixed.",
+        "updatedTemplates": ["Time Series Analysis"]
+    }, {
         "version": 7,
         "updateMessage": "Time Series Analysis added.",
         "updatedTemplates": ["Time Series Analysis"]
