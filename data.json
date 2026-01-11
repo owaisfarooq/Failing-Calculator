@@ -1,5 +1,88 @@
 [
     {
+        "name": "Time Series Analysis",
+        "Entries": [
+            {
+                "name": "Assignments",
+                "weightage": 15,
+                "Entries": [
+                    {
+                        "name": "Assignment-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Assignment-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Mids",
+                "weightage": 25,
+                "Entries": [
+                    {
+                        "name": "Midterm Q.1",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.2",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.3",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.4",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Midterm Q.5",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Quizes",
+                "weightage": 10,
+                "Entries": [
+                    {
+                        "name": "Quiz-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Quiz-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Data Structures",
         "Entries": [
             {

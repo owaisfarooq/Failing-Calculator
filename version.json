@@ -1,5 +1,13 @@
 [
     {
+        "version": 7,
+        "updateMessage": "Time Series Analysis added.",
+        "updatedTemplates": ["Time Series Analysis"]
+    }, {
+        "version": 6,
+        "updateMessage": "Intro to AI project weightage removed.",
+        "updatedTemplates": ["Intro to Artificial Intelligence"]
+    }, {
         "version": 5,
         "updateMessage": "Intro to AI project weightage removed.",
         "updatedTemplates": ["Intro to Artificial Intelligence"]
