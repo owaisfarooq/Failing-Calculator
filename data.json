@@ -1,5 +1,47 @@
 [
     {
+        "name": "Data Visualization Lab",
+        "Entries": [
+            {
+                "name": "Lab Tasks",
+                "weightage": 45,
+                "Entries": [
+                    {
+                        "name": "Lab-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Lab-II",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Lab-III",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    },
+                    {
+                        "name": "Lab-IV",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            },
+            {
+                "name": "Presentation",
+                "weightage": 30,
+                "Entries": [
+                    {
+                        "name": "Presentation-I",
+                        "obtainedMarks": null,
+                        "totalMarks": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Data Visualization",
         "Entries": [
             {

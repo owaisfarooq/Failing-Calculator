@@ -1,5 +1,9 @@
 [
     {
+        "version": 11,
+        "updateMessage": "Data Visualization Lab added.",
+        "updatedTemplates": ["Data Visualization Lab"]
+    }, {
         "version": 10,
         "updateMessage": "Data Visualization added.",
         "updatedTemplates": ["Data Visualization"]
