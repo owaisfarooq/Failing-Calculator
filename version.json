@@ -1,5 +1,9 @@
 [
     {
+        "version": 10,
+        "updateMessage": "Data Visualization added.",
+        "updatedTemplates": ["Data Visualization"]
+    }, {
         "version": 9,
         "updateMessage": "Expository Writing added.",
         "updatedTemplates": ["Expository Writing"]
