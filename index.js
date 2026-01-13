@@ -124,9 +124,9 @@ async function getTemplates() {
 
 function getRequiredMarksInFinals (template) {
   const totalWeightage = template['Entries'].reduce((acc, entry) => acc + entry.weightage, 0);
-  const finalWeightage = 100 - totalWeightage; // will always be 45
-  if (!finalWeightage) {
-    throw new Error("The weightage for finals MUST be 45%");
+  const finalWeightage = 100 - totalWeightage; // will probably always be 45
+  if (!finalWeightage || finalWeightage <= 0 || totalWeightage >= 100) {
+    throw new Error(`The calculated final weightage is adding up to ${finalWeightage}%`);
   }
   let totalObtainedMarks = 0;
 
