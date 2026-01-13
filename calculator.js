@@ -108,6 +108,42 @@ template.Entries.forEach((entry, index) => {
 htmlToBeAdded += `</div>`;
 MainBox.innerHTML = htmlToBeAdded;
 
+function fillCourseMarksByName(courseName = '', marks = 0) {
+    if (!courseName) return;
+    if(!MainBox.children || MainBox.children.length < 1) {
+        return;
+    }
+
+    for (child of MainBox.children) {
+        for (grandchild of child.children) {
+            const table = grandchild.children[0];
+            for (row of table.tBodies[0].rows) {
+                const rowCourseName = row.cells[1].textContent;
+                const obrainedMarksInput = row.cells[2].children[0];
+                if(courseName == rowCourseName) {
+                    obrainedMarksInput.value = marks;
+                }
+            }
+        }
+    }
+}
+
+async function pasteFromClipboard() {
+    try {
+        const text = await navigator.clipboard.readText()
+        const lines = text.split('\n');
+        lines.forEach(line => {
+            const [index, courseName, marks, totalMarks] = line.split('\t');
+            console.log({index, courseName, marks, totalMarks});
+            if (!courseName) return;
+            fillCourseMarksByName(courseName?.trim(), Number(marks?.trim()));
+        });
+        calculate();
+    } catch (error) {
+        console.log('error: ', error);
+    }
+}
+
 function calculate() {
     // Iterate over each table to calculate totals
     let tIndex = 0;
@@ -126,6 +162,7 @@ function calculate() {
 
             const obtainedMarks = Number(obtainedInput.value) || 0;
             const totalMarks = Number(totalInput.value) || 0;
+            console.log({obtainedMarks, totalMarks});
             template.Entries[tIndex].Entries[i].obtainedMarks = obtainedMarks;
             template.Entries[tIndex].Entries[i].totalMarks = totalMarks;
 
@@ -133,9 +170,9 @@ function calculate() {
             const percentageCell = row.cells[4];
             percentageCell.textContent =
                 totalMarks > 0 ? `${((obtainedMarks / totalMarks) * 100).toFixed(2)} %` : "N/A";
-                
-                // Accumulate totals
-                obtainedTotal += obtainedMarks;
+
+            // Accumulate totals
+            obtainedTotal += obtainedMarks;
             totalMarksTotal += totalMarks;
         }
         // template.Entries[tIndex].Entries.forEach((subEntry, subIndex) => {
