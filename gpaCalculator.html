@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
@@ -29,7 +32,9 @@
     </h2>
     <div class="container-fluid my-3">
       <button onclick="addCourse()" class="btn btn-primary">Add</button>
-      <button onclick="calculateGPA()" class="btn btn-primary">Calculate</button>
+      <button onclick="calculateGPA()" class="btn btn-primary">
+        Calculate
+      </button>
       <table class="table table-striped table-hover">
         <thead>
           <tr>
@@ -42,13 +47,21 @@
         <tbody>
           <tr>
             <td>
-              <input id="courseName" class="form-control" type="text" placeholder="Course" />
+              <input
+                class="form-control courseName"
+                type="text"
+                placeholder="Course"
+              />
             </td>
             <td>
-              <input id="creditHours" class="form-control" type="number" placeholder="Crdts" />
+              <input
+                class="form-control creditHours"
+                type="number"
+                placeholder="Crdts"
+              />
             </td>
             <td>
-              <select id="grade" class="form-control">
+              <select class="form-control grade">
                 <option>-</option>
                 <option value="4.0">A</option>
                 <option value="3.67">A-</option>
