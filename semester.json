@@ -1,0 +1,76 @@
+[
+  {
+    "semester": "Fall 2023",
+    "Entries": [
+      { "course": "ICT", "credit": 2 },
+      { "course": "ICT-Lab", "credit": 1 },
+      { "course": "Applied Physics", "credit": 2 },
+      { "course": "Applied Physics-Lab", "credit": 1 },
+      { "course": "Functional English", "credit": 3 },
+      { "course": "Islamic Studies and Ethics", "credit": 2 },
+      { "course": "Programming Fundamentals", "credit": 3 },
+      { "course": "Programming Fundamentals-Lab", "credit": 1 }
+    ],
+    "totalcredits": 15
+  },
+  {
+    "semester": "Spring 2024",
+    "Entries": [
+      { "course": "Database Systems", "credit": 3 },
+      { "course": "Database Systems-Lab", "credit": 1 },
+      { "course": "Digital Logic Design", "credit": 2 },
+      { "course": "Digital Logic Design-Lab", "credit": 1 },
+      { "course": "Discrete Structures", "credit": 3 },
+      { "course": "Intro to SE", "credit": 3 },
+      { "course": "OOP", "credit": 3 },
+      { "course": "OOP-Lab", "credit": 1 }
+    ],
+    "totalcredits": 17
+  },
+  {
+    "semester": "Fall 2024",
+    "Entries": [
+      { "course": "Calculus", "credit": 3 },
+      { "course": "Computer Networs", "credit": 2 },
+      { "course": "Computer Networs-Lab", "credit": 1 },
+      { "course": "Data Structures", "credit": 3 },
+      { "course": "Data Structures-Lab", "credit": 1 },
+      { "course": "Intro to DS", "credit": 2 },
+      { "course": "Intro to DS-Lab", "credit": 1 },
+      { "course": "Probability and Stats", "credit": 3 }
+    ],
+    "totalcredits": 16
+  },
+  {
+    "semester": "Spring 2025",
+    "Entries": [
+      { "course": "Applied Statistics", "credit": 2 },
+      { "course": "Applied Statistics-Lab", "credit": 1 },
+      { "course": "COAL", "credit": 2 },
+      { "course": "COAL-Lab", "credit": 1 },
+      { "course": "Intro to AI", "credit": 2 },
+      { "course": "Intro to AI-Lab", "credit": 1 },
+      { "course": "KRR", "credit": 2 },
+      { "course": "KRR-Lab", "credit": 1 },
+      { "course": "Linear Algebra", "credit": 3 },
+      { "course": "Multivariable Calculus", "credit": 3 }
+    ],
+    "totalcredits": 18
+  },
+  {
+    "semester": "Fall 2025",
+    "Entries": [
+      { "course": "Data Mining", "credit": 2 },
+      { "course": "Data Mining-Lab", "credit": 1 },
+      { "course": "TimeSeries Analysis", "credit": 2 },
+      { "course": "TimeSeries Analysis-Lab", "credit": 1 },
+      { "course": "Operating Systems", "credit": 2 },
+      { "course": "Operating Systems-Lab", "credit": 1 },
+      { "course": "Expository Writing", "credit": 3 },
+      { "course": "Data Algorithms and Analysis", "credit": 3 },
+      { "course": "Data Visualizations", "credit": 2 },
+      { "course": "Data Visualizations-Lab", "credit": 1 }
+    ],
+    "totalcredits": 15
+  }
+]

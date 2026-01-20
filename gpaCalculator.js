@@ -1,3 +1,4 @@
+/*
 function addCourse() {
   const tbody = document.querySelector("tbody");
   for (let i = 0; i < 3; i++) {
@@ -39,10 +40,11 @@ function deleteCourse(button) {
   if (rows.length > 1) {
     const row = button.closest("tr");
     row.remove();
-  }else{
+  } else {
     alert("Atleast one row must be present.");
   }
 }
+*/
 
 function calculateGPA() {
   const rows = document.querySelectorAll("tbody tr");
@@ -58,4 +60,58 @@ function calculateGPA() {
   });
   const sgpa = totalCrdts > 0 ? gpa / totalCrdts : 0;
   document.getElementById("gparesult").textContent = `GPA: ${sgpa.toFixed(2)}`;
+}
+
+// Load Semester Data
+let semesterData = null;
+
+fetch("semester.json")
+  .then((response) => response.json())
+  .then((data) => {
+    semesterData = data;
+    populateSemesterDropdown();
+  });
+
+function populateSemesterDropdown() {
+  const select = document.getElementById("semesterSelect");
+  semesterData.forEach((semester, index) => {
+    const option = document.createElement("option");
+    option.value = index;
+    option.textContent = `${semester.semester} (${semester.totalcredits} credits)`;
+    select.appendChild(option);
+  });
+}
+function loadSemester() {
+  const select = document.getElementById("semesterSelect");
+  const semesterIndex = select.value;
+
+  if (semesterIndex === "") return;
+
+  const semester = semesterData[semesterIndex];
+  const tbody = document.querySelector("tbody");
+  tbody.innerHTML = "";
+
+  semester.Entries.forEach(course =>{
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
+     <td><input class="form-control courseName" type="text" value="${course.course}" readonly /></td>
+      <td><input class="form-control creditHours" type="number" value="${course.credit}" readonly /></td>
+      <td>
+        <select class="form-control grade">
+          <option>-</option>
+          <option value="4.0">A</option>
+          <option value="3.67">A-</option>
+          <option value="3.33">B+</option>
+          <option value="3.0">B</option>
+          <option value="2.67">B-</option>
+          <option value="2.33">C+</option>
+          <option value="2.0">C</option>
+          <option value="1.67">C-</option>
+          <option value="1.0">D</option>
+          <option value="0.0">F</option>
+        </select>
+      </td>
+    `;
+    tbody.appendChild(newRow);
+  });
 }
