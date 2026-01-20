@@ -24,7 +24,7 @@ function addCourse() {
         </select>
     </td>
     <td>
-        <button onclick="deleteCourse()" class="btn btn-secondary">
+        <button onclick="deleteCourse(this)" class="btn btn-secondary">
         <i class="fa-solid fa-x"></i>
         </button>
     </td>
@@ -32,7 +32,10 @@ function addCourse() {
   tbody.appendChild(newRow);
 }
 
-function deleteCourse() {}
+function deleteCourse(button) {
+  const row = button.closest("tr");
+  row.remove();
+}
 
 function calculateGPA() {
   const rows = document.querySelectorAll("tbody tr");
