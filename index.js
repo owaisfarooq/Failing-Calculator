@@ -6,9 +6,9 @@ const templatesFilePath = './data.json';
 
 function route (name) {
   if (window.location.href.includes("github")) {
-    window.location.assign(`/Failing-Calculator/calculator.html?name=${encodeURIComponent(name)}`);
+    window.location.assign(`/Failing-Calculator/aggregateCalculator.html?name=${encodeURIComponent(name)}`);
   } else {
-    window.location.assign(`calculator.html?name=${encodeURIComponent(name)}`);
+    window.location.assign(`aggregateCalculator.html?name=${encodeURIComponent(name)}`);
   }
 }
 
