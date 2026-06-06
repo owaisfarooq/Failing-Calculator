@@ -1,14 +1,12 @@
 const lastUpdateKey = "lastUpdated";
 const versionKey = "version";
 const templatesKey = "templates";
-const versionFilePath = './version.json';
-const templatesFilePath = './data.json';
 
 function route (name) {
   if (window.location.href.includes("github")) {
-    window.location.assign(`/Failing-Calculator/aggregateCalculator.html?name=${encodeURIComponent(name)}`);
+    window.location.assign(`/Failing-Calculator/AggregateCalculator?name=${encodeURIComponent(name)}`);
   } else {
-    window.location.assign(`aggregateCalculator.html?name=${encodeURIComponent(name)}`);
+    window.location.assign(`AggregateCalculator?name=${encodeURIComponent(name)}`);
   }
 }
 
@@ -90,13 +88,28 @@ function getUpdatePendingTemplates(versionData) {
 }
 
 async function getAllVersions() {
-  const response = await fetch(`${versionFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
-  const data = await response.json();
-  return data;
+  // const response = await fetch(`${versionFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
+  const response = await fetch(`${backendUrl}/getAllVersions`, { cache: 'no-cache' });
+  if (!response.ok) {
+    alert("Error getting latest templates.\nStatus:" + response.status);
+  }
+  const res = await response.json();
+  return res.data;
+}
+
+async function getAllTemplates() {
+  // const response = await fetch(`${versionFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
+  const response = await fetch(`${backendUrl}/getLatestData`, { cache: 'no-cache' });
+  if (!response.ok) {
+    alert("Error getting latest templates.\nStatus:" + response.status);
+  }
+  const res = await response.json();
+  return (res.data || []).filter(Boolean);
 }
 
 async function getTemplates() {
   const versionData = await getAllVersions();
+
   const latestVersion = versionData[0].version;
   let needsUpdate = checkForUpdates(latestVersion);
   if (!versionData) {
@@ -105,8 +118,7 @@ async function getTemplates() {
   const oldTemplates = JSON.parse(localStorage.getItem(templatesKey));
   if (needsUpdate) {
     try {
-      const response = await fetch(`${templatesFilePath}?t=${Date.now()}`, { cache: 'no-cache' });
-      const newTemplates = await response.json();
+      const newTemplates = await getAllTemplates();
 
       // only update the updated templates
       const updatedTemplates = getUpdatedTemplates(oldTemplates, newTemplates, versionData);
@@ -151,6 +163,7 @@ function getRequiredMarksInFinals (template) {
 
 function renderTemplates(templates = []) {
   const listBox = document.getElementById("ListBox");
+  const loggedIn = isLoggedIn();
   let htmlToBeAdded = `<div class="row my-5">`;
 
   templates.forEach((template, index) => {
@@ -158,6 +171,12 @@ function renderTemplates(templates = []) {
       htmlToBeAdded += `</div><div class="row my-5">`;
     }
     const calculationResults = getRequiredMarksInFinals(template);
+    const adminActions = loggedIn ? `
+            <div class="d-flex gap-2 mt-2">
+              <a href="admin-login/edit?name=${encodeURIComponent(template.name)}" class="btn btn-outline-secondary btn-sm">Edit</a>
+              <button type="button" class="btn btn-outline-danger btn-sm" data-delete-course="${encodeURIComponent(template.name)}">Delete</button>
+            </div>
+    ` : '';
     htmlToBeAdded += `
       <div class="col-12 col-md-4 mb-4">
         <div class="card mx-auto" style="width: 18rem;">
@@ -166,6 +185,7 @@ function renderTemplates(templates = []) {
             <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you have currently achieved ${ calculationResults.totalObtainedMarks }% aggrigate marks overall">Achived Aggrigate marks: ${calculationResults.totalObtainedMarks}%</p>
             <p style="width: fit-content;" class="card-text tip my-2" data-tooltip="you need ${ calculationResults.percentageNeededInFinals }% marks in finals to pass. min 40% aggrigate is required to pass">Required marks: ${calculationResults.percentageNeededInFinals}%</p>
             <a onclick='route("${template.name}")' tabindex="0" class="btn btn-primary mt-3">Go There</a>
+            ${adminActions}
           </div>
         </div>
       </div>
@@ -175,9 +195,47 @@ function renderTemplates(templates = []) {
     </div>
   `;
   listBox.innerHTML = htmlToBeAdded;
+
+  if (loggedIn) {
+    listBox.querySelectorAll('[data-delete-course]').forEach((button) => {
+      button.addEventListener('click', () => {
+        deleteTemplate(decodeURIComponent(button.dataset.deleteCourse));
+      });
+    });
+  }
+}
+
+async function deleteTemplate(courseName) {
+  if (!isLoggedIn()) {
+    alert('You must be logged in to delete a course.');
+    return;
+  }
+
+  const confirmed = confirm(`Delete "${courseName}"? This cannot be undone.`);
+  if (!confirmed) {
+    return;
+  }
+
+  try {
+    await deleteCourse(courseName);
+    invalidateTemplateCache();
+    window.location.reload();
+  } catch (error) {
+    alert(error.message || 'Failed to delete course');
+  }
+}
+
+function initAdminUi() {
+  updateAdminNav();
+
+  const adminToolbar = document.getElementById('adminToolbar');
+  if (adminToolbar && isLoggedIn()) {
+    adminToolbar.classList.remove('d-none');
+  }
 }
 
 function init() {
+  initAdminUi();
   getTemplates().then(templates => {
     renderTemplates(templates);
   });

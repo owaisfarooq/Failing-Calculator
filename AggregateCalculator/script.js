@@ -134,7 +134,6 @@ async function pasteFromClipboard() {
         const lines = text.split('\n');
         lines.forEach(line => {
             const [index, courseName, marks, totalMarks] = line.split('\t');
-            console.log({index, courseName, marks, totalMarks});
             if (!courseName) return;
             fillCourseMarksByName(courseName?.trim(), Number(marks?.trim()));
         });
@@ -162,7 +161,6 @@ function calculate() {
 
             const obtainedMarks = Number(obtainedInput.value) || 0;
             const totalMarks = Number(totalInput.value) || 0;
-            console.log({obtainedMarks, totalMarks});
             template.Entries[tIndex].Entries[i].obtainedMarks = obtainedMarks;
             template.Entries[tIndex].Entries[i].totalMarks = totalMarks;
 
