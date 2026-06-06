@@ -1,4 +1,4 @@
-if (!requireAuth('../')) {
+if (!requireAuth('/')) {
   throw new Error('Authentication required');
 }
 
@@ -8,7 +8,7 @@ const editorContainer = document.getElementById('editorContainer');
 editorContainer.innerHTML = renderCourseEditor(createEmptyCourse(), {
   showVersionFields: true,
   saveLabel: 'Create course',
-  cancelPath: '../../',
+  cancelPath: '/',
 });
 
 const rootElement = document.getElementById('courseEditorRoot');
@@ -31,7 +31,7 @@ bindCourseEditorEvents(rootElement, async () => {
     });
 
     invalidateTemplateCache();
-    window.location.assign('../../');
+    window.location.assign('/');
   } catch (error) {
     showEditorAlert(error.message || 'Failed to create course');
   }

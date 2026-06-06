@@ -1,5 +1,5 @@
 if (isLoggedIn()) {
-  window.location.assign('../');
+  window.location.assign('/');
 }
 
 updateAdminNav();
@@ -24,7 +24,7 @@ loginForm.addEventListener('submit', async (event) => {
       document.getElementById('username').value.trim(),
       document.getElementById('password').value
     );
-    window.location.assign('../');
+    window.location.assign('/');
   } catch (error) {
     showLoginError(error.message || 'Login failed');
     loginButton.disabled = false;

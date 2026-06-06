@@ -1,4 +1,4 @@
-if (!requireAuth('../')) {
+if (!requireAuth('/')) {
   throw new Error('Authentication required');
 }
 
@@ -6,7 +6,7 @@ updateAdminNav();
 
 const courseName = new URLSearchParams(window.location.search).get('name');
 if (!courseName) {
-  window.location.assign('../../');
+  window.location.assign('/');
   throw new Error('Course name is required');
 }
 
@@ -32,14 +32,14 @@ async function initEditor() {
         <div class="alert alert-warning">
           Course "${courseName}" was not found.
         </div>
-        <a href="../../" class="btn btn-secondary">Back to home</a>
+        <a href="/" class="btn btn-secondary">Back to home</a>
       `;
       return;
     }
 
     editorContainer.innerHTML = renderCourseEditor(JSON.parse(JSON.stringify(course)), {
       saveLabel: 'Update course',
-      cancelPath: '../../',
+      cancelPath: '/',
     });
 
     const rootElement = document.getElementById('courseEditorRoot');
@@ -49,7 +49,7 @@ async function initEditor() {
         const updatedCourse = buildCourseFromForm(rootElement);
         await updateCourse(updatedCourse);
         invalidateTemplateCache();
-        window.location.assign('../../');
+        window.location.assign('/');
       } catch (error) {
         showEditorAlert(error.message || 'Failed to update course');
       }
@@ -57,7 +57,7 @@ async function initEditor() {
   } catch (error) {
     editorContainer.innerHTML = `
       <div class="alert alert-danger">${error.message || 'Failed to load course'}</div>
-      <a href="../../" class="btn btn-secondary">Back to home</a>
+      <a href="/" class="btn btn-secondary">Back to home</a>
     `;
   }
 }

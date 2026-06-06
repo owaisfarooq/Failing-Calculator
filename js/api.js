@@ -19,7 +19,7 @@ function isLoggedIn() {
 
 function requireAuth(redirectPath) {
   if (!isLoggedIn()) {
-    window.location.assign(redirectPath || '../admin-login');
+    window.location.assign(redirectPath || '/admin-login');
     return false;
   }
   return true;

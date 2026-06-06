@@ -177,7 +177,7 @@ function renderCourseEditor(course, options = {}) {
 
       <div class="d-flex gap-2 mt-4">
         <button type="button" class="btn btn-primary" data-action="save-course">${options.saveLabel || 'Save course'}</button>
-        <a href="${options.cancelPath || '../'}" class="btn btn-secondary">Cancel</a>
+        <a href="${options.cancelPath || '/'}" class="btn btn-secondary">Cancel</a>
       </div>
     </div>
   `;

@@ -65,7 +65,7 @@ function calculateGPA() {
 // Load Semester Data
 let semesterData = null;
 
-fetch("../data/semester.json")
+fetch("/data/semester.json")
   .then((response) => response.json())
   .then((data) => {
     semesterData = data;
