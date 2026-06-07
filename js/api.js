@@ -1,4 +1,4 @@
-const backendUrl = 'https://failing-calculator-backend.vercel.app';
+const backendUrl = window.location.host === 'localhost' ? 'http://localhost:3000' : 'https://failing-calculator-backend.onrender.com';
 const accessTokenKey = 'accessToken';
 
 function getAccessToken() {
