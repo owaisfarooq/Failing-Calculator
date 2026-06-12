@@ -54,11 +54,14 @@ function getUpdatedTemplates(oldTemplates, newTemplates, versionData) {
   });
 
   // add the templates that are in newTemplates but not in oldTemplates
+  const templatesToBeAdded = [];
   newTemplates.forEach(newTemplate => {
     if (oldTemplates.findIndex(oldTemplate => oldTemplate.name === newTemplate.name) === -1) {
-      updatedTemplates.push(newTemplate);
+      templatesToBeAdded.push(newTemplate);
     }
   });
+  // add new ones in the front
+  updatedTemplates = [...templatesToBeAdded, ...updatedTemplates];
 
   // update the templates that are in the missed updates
   const penidngTempalteUpdates = getUpdatePendingTemplates(versionData)
