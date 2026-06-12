@@ -38,6 +38,7 @@ async function initEditor() {
     }
 
     editorContainer.innerHTML = renderCourseEditor(JSON.parse(JSON.stringify(course)), {
+      showVersionFields: true,
       saveLabel: 'Update course',
       cancelPath: '/',
     });
@@ -47,7 +48,9 @@ async function initEditor() {
     bindCourseEditorEvents(rootElement, async () => {
       try {
         const updatedCourse = buildCourseFromForm(rootElement);
-        await updateCourse(updatedCourse);
+        const version = getVersionFields(rootElement);
+        await updateCourse(updatedCourse, version);
+
         invalidateTemplateCache();
         window.location.assign('/');
       } catch (error) {

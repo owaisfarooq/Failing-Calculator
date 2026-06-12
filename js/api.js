@@ -87,10 +87,10 @@ async function createCourse({ course, isUpdateVersion, updateMessage, updatedTem
   });
 }
 
-async function updateCourse(course) {
+async function updateCourse(course, version) {
   return apiRequest('/course', {
     method: 'PUT',
-    body: JSON.stringify({ oldCourseName: courseName, course }),
+    body: JSON.stringify({ oldCourseName: courseName, course, version }),
   });
 }
 
